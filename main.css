@@ -1,0 +1,121 @@
+/* Colors:
+  yellow: #f9ff00
+  dark gray: #333333
+  light gray: #666666
+  font: Marcellus SC (serif) & Lato (sans-serif)
+*/
+
+
+/* general */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, :after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10px;
+  line-height: 1.5;
+  color: #333;
+  margin: 0;
+}
+
+h1, h2, h3, p, a, li {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.8em;
+}
+
+p {
+  font-size: 1.6em;
+}
+
+.container {
+  margin: 0 150px;
+}
+/* HEADER */
+
+.header {
+  width: 100%;
+  border-bottom: 3px solid #999;
+  margin: auto;
+  margin: 0 0 2em 0; /*bottom 2em? come back*/
+  display: inline-block;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top:4em;
+  padding-bottom: 2em;
+}
+
+.header-title {
+  display: inline-block;
+  text-align: right;
+  width: auto;
+}
+
+.header-title h1 {
+  font-family: 'Marcellus SC', serif;
+  font-weight: 300;
+  font-size: 5em;
+  margin-bottom: 0;
+}
+
+.header-title p {
+  font-size: 2em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* HERO */
+
+.hero {
+  background: url('images/hero-code.jpg');
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  min-height: 500px;
+}
+
+
+
+/* FEATURED WORK */
+.featured h1 {
+  color: #999;
+
+}
+.featured-work {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+
+}
+
+.card {
+  width: 300px;
+}
+
+.card-description {
+  text-align: center;
+}
+
+.card-description h2 {
+  font-size: 3.2em;
+  text-align: center;
+}
