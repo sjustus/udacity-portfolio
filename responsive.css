@@ -1,0 +1,63 @@
+/* Removes header-title and arranges content for smaller screen */
+.container {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.header-title {
+    display: none;
+  }
+
+.header-inner {
+  justify-content: center;
+}
+
+.featured-work {
+  justify-content: space-around;
+}
+
+/* Breakpoint max-width: 560px*/
+@media screen and (max-width: 560px) {
+  .hero {
+    min-height: 200px;
+  }
+}
+
+/* Breakpoint min-width: 561px */
+@media screen and (min-width: 561px) {
+  .hero {
+    min-height: 300px;
+  }
+}
+
+/* Breakpoint min-width: 980px (Replaces header and margins) */
+@media screen and (min-width: 960px) {
+  .container {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .header-inner {
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .header-title {
+    display: inline-block;
+  }
+
+  .hero {
+    min-height: 500px;
+  }
+}
+
+@media screen and (min-width: 1230px) {
+  .container {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+  .featured-work {
+    justify-content: space-between;
+  }
+}
