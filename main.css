@@ -44,6 +44,10 @@ p {
   font-size: 1.6em;
 }
 
+img, embed, object, video {
+  max-width: 100%;
+}
+
 .container {
   margin: 0 150px;
 }
@@ -59,10 +63,10 @@ p {
 
 .header-inner {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
   padding-top:4em;
   padding-bottom: 2em;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .header-title {
@@ -88,23 +92,22 @@ p {
 .hero {
   background: url('images/hero-code.jpg');
   background-size: cover;
-  width: 100%;
+  max-width: 100%;
   position: relative;
   min-height: 500px;
+
 }
 
 
 
 /* FEATURED WORK */
-.featured h1 {
+.featured h2 {
   color: #999;
 
 }
 .featured-work {
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-
+  flex-flow: row wrap;
 }
 
 .card {
@@ -115,7 +118,7 @@ p {
   text-align: center;
 }
 
-.card-description h2 {
+.card-description h3 {
   font-size: 3.2em;
   text-align: center;
 }
